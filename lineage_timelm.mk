@@ -20,6 +20,21 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LM-V600
 
+# Matrixx Flags
+MATRIXX_MAINTAINER := K5hiroi
+TARGET_INCLUDE_MATLOG := false
+TARGET_CUSTOM_UDFPS := true
+WITH_GMS := false
+WITH_BCR := false
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,60)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,30)
+SURFACE_FLINGER_BOOST := true
+TARGET_OPTIMIZED_DEXOPT := true
+BYPASS_CHARGE_SUPPORTED := false
+HBM_SUPPORTED := false
+USE_REALITY_ENGINE := true
+PRODUCT_NO_CAMERA := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
