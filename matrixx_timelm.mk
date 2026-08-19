@@ -14,7 +14,7 @@ $(call inherit-product, device/lge/timelm/device.mk)
 $(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_timelm
+PRODUCT_NAME := matrixx_timelm
 PRODUCT_DEVICE := timelm
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_BRAND := lge
