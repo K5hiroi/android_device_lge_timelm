@@ -24,6 +24,7 @@ PRODUCT_MODEL := LM-V600
 MATRIXX_MAINTAINER := K5hiroi
 TARGET_INCLUDE_MATLOG := false
 TARGET_CUSTOM_UDFPS := true
+TARGET_BOOT_ANIMATION_RES :=1080
 WITH_GMS := false
 WITH_BCR := false
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,60)
