@@ -11,14 +11,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/lge/timelm/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_timelm
+PRODUCT_NAME := bliss_timelm
 PRODUCT_DEVICE := timelm
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LM-V600
+
+# Biss Flags
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+BLISS_BUILD_TYPE := UNOFFICIAL
+BLISS_MAINTAINER := "K5hiroi"
+EXTRA_UDFPS_ANIMATION := true
+TARGET_GAPPS_VARIANT := core
+# Debug Flags
+TARGET_INCLUDE_MATLOG := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
